@@ -3,7 +3,6 @@
 #include "RecombinaisonFactor.hpp"
 #include "ModuloCounter.hpp"
 
-#include <fstream>
 namespace Combiner{
   
   void Process(std::istream& targetStream, std::ostream& outputStream, RecombinaisonFactor recombinaisonFactor){
