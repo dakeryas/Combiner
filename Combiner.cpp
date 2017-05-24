@@ -8,7 +8,7 @@ namespace Combiner{
   
   void Process(std::istream& targetStream, std::ostream& outputStream, RecombinaisonFactor recombinaisonFactor){
     
-    ModuloCounter counter(recombinaisonFactor);
+    ModuloCounter moduloCounter(recombinaisonFactor);
     double x, y;
     
     double xmean{0};
@@ -16,12 +16,12 @@ namespace Combiner{
     
     while(targetStream >> x  >> y){
       
-      xmean = x/(counter+1)+xmean*counter/(counter+1);
+      xmean = x/(moduloCounter+1)+xmean*moduloCounter/(moduloCounter+1);
       ysum += y;
       
-      ++counter;
+      ++moduloCounter;
       
-      if(counter % recombinaisonFactor == 0){
+      if(moduloCounter == 0){
         
         outputStream << xmean <<"\t"<<ysum<<"\n";
         xmean = 0;
