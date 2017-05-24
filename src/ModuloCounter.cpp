@@ -1,6 +1,7 @@
 #include "ModuloCounter.hpp"
 
 #include <stdexcept>
+#include <string>
 
 namespace Combiner{
   

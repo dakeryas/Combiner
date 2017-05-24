@@ -1,5 +1,7 @@
 #include "RecombinaisonFactor.hpp"
 
+#include <string>
+
 namespace Combiner{
     
   RecombinaisonFactor::RecombinaisonFactor():value(1){
